@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SR PLAGAS — Clientes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+  <aside class="sidebar" role="navigation" aria-label="Menú principal">
+    <!-- ...existing code for sidebar... -->
+    <div class="brand" tabindex="0">
+      <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <rect rx="12" width="64" height="64" fill="#d4af37"/>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="#111">🕷</text>
+      </svg>
+      <div>
+        <h1>SR PLAGAS</h1>
+        <small>Sistema Administrativo</small>
+      </div>
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="clients.html" aria-current="page">Clientes</a></li>
+        <li><a href="appointments.html">Citas</a></li>
+        <li><a href="statistics.html">Estadísticas</a></li>
+        <li><a href="settings.html">Configuración</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <button class="btn-chat" aria-label="Abrir chatbot">Chatbot</button>
+    </div>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar" role="banner">
+      <!-- ...existing code for topbar... -->
+      <div class="left">
+        <button class="menu-toggle" aria-label="Abrir menú lateral" tabindex="0">☰</button>
+      </div>
+      <div class="right">
+        <button class="icon" aria-label="Notificaciones" tabindex="0">🔔<span class="badge" aria-label="3 notificaciones">3</span></button>
+        <button class="icon" aria-label="Perfil de usuario" tabindex="0">👤</button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1" role="main">
+      <h2 class="page-title">Gestión de Clientes</h2>
+      <p class="subtitle">Administra la información y el historial de tus clientes</p>
+      <section class="cards" aria-label="Listado de clientes">
+        <article class="card" tabindex="0">
+          <h3>Juan Pérez</h3>
+          <p class="big">Empresa: Limpio S.A.</p>
+          <p class="muted">Última cita: 12/10/2024</p>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>María Gómez</h3>
+          <p class="big">Empresa: Hogar Feliz</p>
+          <p class="muted">Última cita: 05/10/2024</p>
+        </article>
+        <!-- ...more client cards as needed... -->
+      </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <p>&copy; 2025 SR PLAGAS — Prototipo Maquetación</p>
+    </footer>
+  </div>
+  <aside id="chat-panel" class="chatbot-panel" aria-hidden="true" aria-label="Panel de chatbot">
+    <!-- ...existing code for chatbot... -->
+    <header class="chatbot-header">
+      <h3>Asistente SR PLAGAS</h3>
+      <button class="chatbot-close" aria-label="Cerrar chatbot">×</button>
+    </header>
+    <div class="chatbot-body" id="chat-body">
+      <div class="msg bot">¡Hola! Soy el asistente virtual de SR PLAGAS. ¿En qué puedo ayudarte hoy?</div>
+      <div class="msg bot">Mi tarea es ayudarte a resolver problemas relacionados con el sistema. Si no puedo solucionar tu consulta, te explicaré para qué estoy diseñado o cuáles son mis capacidades.</div>
+    </div>
+    <footer class="chatbot-footer">
+      <input id="chat-input" type="text" placeholder="Escribe tu mensaje..." aria-label="Escribe tu mensaje" />
+      <button id="chat-send" aria-label="Enviar mensaje">➤</button>
+    </footer>
+  </aside>
+  <script src="main.js"></script>
+</body>
+</html>
